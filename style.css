@@ -1,0 +1,19 @@
+body
+{
+    background-image: url(grow_header.jpg);
+}
+
+h1,h2
+{
+    font-family: sans-serif;
+}
+
+form
+{
+    font-family: sans-serif;
+}
+
+h2
+{
+    font-size: 1em;
+}

